@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "Spring",
+    platforms: [
+        .iOS(SupportedPlatform.IOSVersion.v8),
+        .tvOS(SupportedPlatform.TVOSVersion.v11),
+        .macOS(SupportedPlatform.MacOSVersion.v10_15)
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
